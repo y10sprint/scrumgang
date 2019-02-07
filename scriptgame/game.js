@@ -1,7 +1,10 @@
+
+    
+  
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 var ballRadius = 10;
-var x = canvas.width/2;
+var x = canvas.width / 2;
 var y = canvas.height-30;
 var dx = 5;
 var dy = -5;
@@ -19,7 +22,8 @@ var brickOffsetTop = 30;
 var brickOffsetLeft = 30;
 var score = 0;
 var lives = 3;
-
+var mycolor= 'yellow';
+var startBtn = document.getElementById('startBtn');
 var bricks = [];
 for(var c=0; c<brickColumnCount; c++) {
   bricks[c] = [];
@@ -61,7 +65,7 @@ function collisionDetection() {
 function drawBall() {
   ctx.beginPath();
   ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-  ctx.fillStyle = "red";
+  ctx.fillStyle = mycolor;
   ctx.fill();
   ctx.closePath();
 }
@@ -82,7 +86,7 @@ function drawBricks() {
         bricks[c][r].y = brickY;
         ctx.beginPath();
         ctx.rect(brickX, brickY, brickWidth, brickHeight);
-        ctx.fillStyle = "#0095DD";
+        ctx.fillStyle = "maroon";
         ctx.fill();
         ctx.closePath();
       }
@@ -101,6 +105,7 @@ function drawLives() {
 }
 
 function draw() {
+    startBtn.style.display = 'none';
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   drawBricks();
   drawBall();
@@ -148,3 +153,5 @@ function draw() {
 }
 
 draw();
+ 
+    
