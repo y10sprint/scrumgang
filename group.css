@@ -1,0 +1,116 @@
+*
+{
+    margin: 0;
+    padding: 0; 
+}
+
+header 
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(background.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  
+}
+
+article 
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(illusiony.gif);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  
+}
+
+.main-nav
+
+{
+    float:right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.main-nav li 
+{
+    display: inline-block;
+}
+
+.main-nav li a
+{
+    color: darkturquoise;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.main-nav li.active a 
+{
+    border: 1px solid white;
+}
+
+.main-nav li a:hover
+{
+    border: 1px solid white;
+}
+
+.button
+{
+    margin-top: -275px;
+    margin-left: 30%;
+    
+}
+
+.button
+{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 13px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    position: center;
+       
+}
+
+.btn-one:hover
+{
+    background-color: #20B2AA;
+    transition: all 0.5s ease-in;
+    
+}
+
+.btn-two:hover
+{
+    background-color:  #20B2AA;
+    transition: all 0.5s ease-in;
+}
+
+.btn-three:hover
+{
+    background-color:  #20B2AA;
+    transition: all 0.5s ease-in;
+}
+
+
+body {
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(space.gif);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.btn-one {
+     border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 7px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
